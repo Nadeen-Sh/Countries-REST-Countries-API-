@@ -1,0 +1,40 @@
+.page{
+padding-inline: 7px;
+padding-block-end:10px;
+}
+
+
+.flag{
+width:200px;
+height: 150px;
+}
+
+.card{
+ width: 300px;
+ align-items: center;
+ padding:30px;
+ font-size: 15px;
+height:330px ;
+border-radius:5px;
+
+}
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+background-color: #A4CBCC;
+}
+
+img {
+ height: 200px;
+ overflow: hidden;
+ position: relative;
+      
+}
+  
+
+
+h2{
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}

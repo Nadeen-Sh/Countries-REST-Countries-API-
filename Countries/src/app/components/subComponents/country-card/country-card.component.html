@@ -1,0 +1,33 @@
+
+
+<!-- <div>
+<app-country-card *ngFor="let country of countries$ |async" 
+  [country]="country"></app-country-card>
+</div> -->
+<div class="page">
+  
+<div
+  class="card"
+  *ngIf="country"
+  [routerLink]="'/' + country.name" >
+
+
+
+  <div >
+    <img [src]="country.flag"  class="flag"/>
+  </div>
+  <div >
+    <h2>{{ country.name }}</h2>
+    <p>
+      <strong>Capital:</strong>
+      {{ country.capital }}
+    </p>
+   
+    <p>
+      <strong>Region:</strong>
+      {{ country.region }}
+    </p>
+    
+  </div>
+</div>
+</div>
