@@ -1,0 +1,19 @@
+<div class="head">
+<app-nav-bar></app-nav-bar>
+<nav class="navbar navbar-light" >
+  
+<div class="searchBox">
+  <div class="input-group">
+    <input   [(ngModel)]="searchFilter" type="search" class="form-control rounded" placeholder="Search for a country ... " aria-label="Search"
+      aria-describedby="search-addon" />
+      <span class="fa fa-search"></span>
+  </div>
+
+</div>
+<app-select-region-filter [values]="AllOptions"
+[(value)]="regionFilter"></app-select-region-filter>
+</nav>
+</div>
+<div class="row">
+<app-country-card *ngFor="let country of countries" [country]="country"></app-country-card>
+</div>

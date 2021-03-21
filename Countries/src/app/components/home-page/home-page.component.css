@@ -1,0 +1,39 @@
+.row{
+    padding:50px;
+  
+}
+
+.head{
+  background-image:url("src\assets\navimg.jpg");
+ 
+}
+
+
+nav{
+    padding-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+ }
+
+ .searchBox{
+  margin:auto;
+ padding-bottom: 10px; 
+  width: 300px;
+  position: relative; 
+ }
+
+ 
+ span {
+  font-size: 18px;
+  color:blue;
+  position: absolute;
+  padding: 9px;
+ 
+} 
+
+ input{
+  padding: 12px 40px;
+ }
+
+  
