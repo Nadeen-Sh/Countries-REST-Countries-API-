@@ -1,0 +1,9 @@
+.region{
+    margin-bottom: 9px; 
+    padding-right:60px;
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: white;
+}
