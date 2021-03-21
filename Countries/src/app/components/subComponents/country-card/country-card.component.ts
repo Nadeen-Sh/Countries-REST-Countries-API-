@@ -1,4 +1,4 @@
-import { Component, OnInit ,Input} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Country } from '../../../CountryApi';
 
 
@@ -11,9 +11,4 @@ import { Country } from '../../../CountryApi';
 export class CountryCardComponent  {
   @Input()
   country?: Country;
-
-
-  toggle(){
-   
-  }
 }
