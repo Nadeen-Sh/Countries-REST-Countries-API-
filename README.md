@@ -33,6 +33,7 @@ The user ahould be able to:
 - Click on the back button to back to the Home page.
 - Click to the Earth icon 🌎︎ on the title to go to the Home page.
 - Search for a country name using search input.
+- Swap between Dark mode and Light mode using the icons.
 - Select region name to filter the countries by regions.
 
 
@@ -52,3 +53,6 @@ The user ahould be able to:
 
 - Mobile
 <img src='https://user-images.githubusercontent.com/48320569/111890301-e742c080-89f0-11eb-874b-3031c8318042.JPG' />
+
+- Darh mode
+ <img src="https://user-images.githubusercontent.com/48320569/111924860-1cade380-8aaf-11eb-88bd-308027bae157.JPG" />
