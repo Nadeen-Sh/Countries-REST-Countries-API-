@@ -1,0 +1,106 @@
+
+
+<div class="head">
+  <app-nav-bar></app-nav-bar>
+</div>
+
+
+
+  <div class="wrap">
+    <button class="button" [routerLink]="'/'">
+    <i class="fa fa-arrow-left" ></i>
+  </button>
+</div>
+
+
+<div *ngIf="country$ | async; let country"   class="card" >
+  
+  <section >
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+  <img [src]="country.flag" />
+
+    <h2>{{ country.name }}</h2>
+  </div>
+  
+
+<div class="col-xs-6">
+  <div  class="second">
+    <p>
+      <strong>Native Name:</strong>
+      {{ country.nativeName }}
+    </p>
+    <p>
+      <strong>Capital:</strong>
+      {{ country.capital }}
+    </p>
+    <p>
+        <strong>Population:</strong>
+        {{ country.population | number: '1.0' }}
+    </p>
+    <p>
+      <strong>Region:</strong>
+      {{ country.region }}
+    </p>
+    <p>
+        <strong>Sub Region:</strong>
+        {{ country.subregion }}
+      </p>
+     
+    </div>
+      </div>
+     
+      <div class="col-xs-6">
+        <div  class="third">
+        <p>
+          <strong>Top Level Domain:</strong>
+          {{ country.topLevelDomain }}
+        </p>
+        <p>
+        <strong> timezones:</strong>
+        {{ country. timezones.slice(0,2)}}
+      </p>
+
+     
+      <p>
+      
+        <strong>Currencies:</strong>
+        {{ getCurrency(country.currencies) }}
+      </p>
+      <p>
+        <strong>Languages:</strong>
+        {{ getLanguage(country.languages) }}
+      </p>
+    </div>
+    </div>
+    </div>
+  </div>
+
+      
+<div class="footer">
+<div class="col-xs-6">
+  
+        <div
+          *ngIf="borderCountries$ | async; let borderCountries"
+         class="borders"
+        >
+      
+        <p class="pbr"><strong>Borders:</strong></p>
+      
+     
+          <div
+            *ngFor="let borderCountry of borderCountries"
+           
+            class="btn btn-outline-secondary btn-space"
+            [routerLink]="'/' + borderCountry.name"
+          >
+          
+            {{ borderCountry.name.split('(')[0]}}
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+</div>
