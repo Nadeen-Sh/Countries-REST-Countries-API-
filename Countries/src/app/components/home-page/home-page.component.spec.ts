@@ -24,6 +24,7 @@ describe('HomePageComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  
   it("testing title",()=>{
     expect(component.componentName).toBe("Home")
   })

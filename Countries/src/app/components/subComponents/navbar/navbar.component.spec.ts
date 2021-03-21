@@ -25,6 +25,7 @@ describe('NavbarComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  
   it("testing html element",()=>{
     const data=fixture.nativeElement;
     expect(data.querySelector(".title").textContent).toContain("Around the world")
