@@ -27,15 +27,17 @@ h3{
 
 .toggle{
     position: absolute;
-    right: 30px;
+    right: 10px;
     top:3px;
 }
 span{
     color:white;
+    cursor: pointer;
+
     
 }
 
-.switch {
+/* .switch {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -85,7 +87,7 @@ span{
     transform: translateX(14px);
   }
   
-  /* Rounded sliders */
+ 
   .slider.round {
     border-radius: 34px;
   }
@@ -93,3 +95,5 @@ span{
   .slider.round:before {
     border-radius: 50%;
   }
+   */
+ 

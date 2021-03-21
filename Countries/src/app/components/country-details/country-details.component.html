@@ -13,7 +13,7 @@
 </div>
 
 
-<div *ngIf="country$ | async; let country"   class="card" >
+<div *ngIf="country$ | async; let country"  class="card" >
   
   <section >
 <div class="container">
@@ -28,7 +28,7 @@
 <div class="col-xs-6">
   <div  class="second">
     <p>
-      <strong>Native Name:</strong>
+      <strong >Native Name:</strong>
       {{ country.nativeName }}
     </p>
     <p>
@@ -44,7 +44,7 @@
       {{ country.region }}
     </p>
     <p>
-        <strong>Sub Region:</strong>
+        <strong >Sub Region:</strong>
         {{ country.subregion }}
       </p>
      
@@ -92,7 +92,7 @@
           <div
             *ngFor="let borderCountry of borderCountries"
            
-            class="btn btn-outline-secondary btn-space"
+            class="btn btn-outline-dark btn-space"
             [routerLink]="'/' + borderCountry.name"
           >
           

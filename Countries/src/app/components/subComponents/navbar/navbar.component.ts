@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+
+import { Component  } from '@angular/core';
 import {Router} from "@angular/router"
 
 
@@ -9,14 +10,12 @@ import {Router} from "@angular/router"
 })
 export class NavbarComponent  {
 
- 
-  constructor(private router:Router){
 
-  }
 
-  ngOnit(){
- 
-  }
+  constructor(private router:Router ){}
+
+  ngOnit(){}
+
 
   goHome(){
     this.router.navigate(['/'])
@@ -24,6 +23,12 @@ export class NavbarComponent  {
   
   toggle(){
     
+    document.body.style.backgroundColor = 'black';
+    
+  }
+  
+  Backtoggle(){
+    document.body.style.backgroundColor = 'white';
   }
   }
   
