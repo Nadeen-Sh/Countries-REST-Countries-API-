@@ -22,9 +22,7 @@ export class NavbarComponent  {
   }
   
   toggle(){
-    
     document.body.style.backgroundColor = 'black';
-    
   }
   
   Backtoggle(){

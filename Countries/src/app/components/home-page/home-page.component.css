@@ -5,7 +5,10 @@
 
 .head{
   background-image:url("src\assets\navimg.jpg");
- 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 

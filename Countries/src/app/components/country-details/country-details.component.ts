@@ -34,31 +34,20 @@ mergeMap((response)=>{
   
   return of(response)
 })
-
-
-      )}
-      )
-  }
+  )}
+    )}
 
   getLanguage(language: Language[]){
-    return language.map((language)=>language.name).join(' /')
-
- 
-  
+    return language.map((language)=>language.name).join(' /') 
 }
 
-    getCurrency(currency: Currency[]){
-      return currency.map((currency)=>currency.name).join(' /')
 
-   
-    
-  }
+  getCurrency(currency: Currency[]){
+    return currency.map((currency)=>currency.name).join(' /')
+ }
+
   getRegionalBloc(regional: RegionalBloc[]){
     return regional.map((regional)=>regional.name).join()
-
- 
-  
 }
  
-
 }
