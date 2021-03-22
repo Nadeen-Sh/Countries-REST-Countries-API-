@@ -1,10 +1,13 @@
 .header{
-    display: inline-flex;
+  display: inline-flex;
    padding-top: 20px;
 }
 
-nav{
-  
+.title{
+padding-top:20px;
+}
+
+nav{ 
   margin-left: 4px;
    margin-right: 4px;  
 }
@@ -13,11 +16,14 @@ nav{
     cursor: pointer;
    color: white;
    padding:1px;
-  
 }
 
 span :hover{
   color: yellow;
+}
+
+.earth{
+  padding-top:19px;
 }
 
 
@@ -33,9 +39,10 @@ h3{
 
 .toggle{
     position: absolute;
-    right: 10px;
+    right: 8px;
     top:3px;
 }
+
 
 
 
@@ -43,6 +50,7 @@ span{
     color:white;
     cursor: pointer;
     font-size: 14px;
+    
 }
 
 .light:hover,.dark:hover{
