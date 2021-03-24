@@ -33,12 +33,19 @@ export class HomePageComponent implements OnInit {
     })
   
   }
+  
   get countries(){
     return this.search
-    ?this.search.filter((country)=>
-    this.searchFilter ? country.name.toLocaleLowerCase()
-    .includes(this.searchFilter.toLowerCase()): country)
 
+    ?this.search.filter((country)=>
+    this.searchFilter ? country.name.toLocaleLowerCase() 
+    .includes(this.searchFilter.toLowerCase()) 
+    || country.capital.toLocaleLowerCase() 
+    .includes(this.searchFilter.toLowerCase())
+    || country.nativeName.toLocaleLowerCase() 
+    .includes(this.searchFilter.toLowerCase())
+    : country)
+      
     .filter((country)=>
     this.regionFilter
     ?country.region
@@ -48,7 +55,6 @@ export class HomePageComponent implements OnInit {
     :country
     )
     :this.search
-
   }
 }
 

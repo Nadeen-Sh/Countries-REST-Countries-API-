@@ -5,15 +5,16 @@
   
 <div class="searchBox">
   <div class="input-group">
-    <input   [(ngModel)]="searchFilter" type="search" class="form-control rounded" placeholder="Search for a country ... " aria-label="Search"
-      aria-describedby="search-addon" />
+    <input   [(ngModel)]="searchFilter" type="search" class="form-control rounded" placeholder="Search for country ... " aria-label="Search" 
+      aria-describedby="search-addon"  />
       <span class="fa fa-search"></span>
   </div>
-
+  <div class="hint">you can search by country-name or capital or native-name</div>
 </div>
 <app-select-region-filter [values]="AllOptions"
 [(value)]="regionFilter"></app-select-region-filter>
 </nav>
+
 </div>
 <div class="row">
 <app-country-card *ngFor="let country of countries" [country]="country"></app-country-card>
