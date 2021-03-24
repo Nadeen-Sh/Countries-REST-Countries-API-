@@ -35,12 +35,12 @@ p{
     }}
           
     
-   @media (min-width:320px) and (max-width:321px) {
+  @media (min-width:320px) and (max-width:321px) {
       .head {
        width: 380px;}
       }
         
-    @media (min-width:280px) and (max-width:281px) {
+  @media (min-width:280px) and (max-width:281px) {
       .head {
        width: 380px;}
       }
@@ -73,13 +73,16 @@ p{
  }
 
 
-
  .btn-space {
   margin-right: 15px;
   margin-bottom: 8px;
 }
 
-
+.iconFlag{
+  width:30px;
+  height: 18px;;
+  padding-right: 0px;
+}
 
   /* back button style */
   .wrap {
@@ -156,3 +159,5 @@ p{
       opacity: 0;
     }
   }
+
+ 
