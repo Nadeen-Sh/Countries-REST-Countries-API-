@@ -26,11 +26,24 @@ p{
 .head{
     background-image:url("src\assets\navimg.jpg");
     width:100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
   }
+
+  @media (max-width: 978px) {
+    .head {
+      width: 100%;
+      height: auto;
+    }}
+          
+    
+   @media (min-width:320px) and (max-width:321px) {
+      .head {
+       width: 380px;}
+      }
+        
+    @media (min-width:280px) and (max-width:281px) {
+      .head {
+       width: 380px;}
+      }
 
   h2{
     font-weight:bold;

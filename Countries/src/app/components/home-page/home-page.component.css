@@ -1,16 +1,39 @@
+
 .row{
-    padding:50px;
-  
+  padding:3%;
+  margin:auto;
 }
+
+@media (max-width: 978px) {
+  .row {
+    padding:8%;
+    margin:auto;
+  }}
 
 .head{
   background-image:url("src\assets\navimg.jpg");
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  width: 100%;
+  
 }
 
+
+@media (max-width: 978px) {
+  .head {
+    width: 100%;
+  }}
+  
+
+  @media (min-width:320px) and (max-width:321px) {
+    .head {
+      width: 340px;}
+  }
+    
+  @media (min-width:280px) and (max-width:281px) {
+    .head {
+      width: 340px;}
+  }
+    
+ 
 
 nav{
     padding-bottom: 0px;
