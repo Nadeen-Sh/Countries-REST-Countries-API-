@@ -32,7 +32,7 @@ The user ahould be able to:
 - Click on one of the Border countries buutons in detailed page to go to this country details.
 - Click on the back button to back to the Home page.
 - Click to the Earth icon 🌎︎ on the title to go to the Home page.
-- Search for a country name using search input.
+- Search for a country-name, country-capital and native-name using search input.
 - Swap between Dark mode and Light mode using the icons.
 - Select region name to filter the countries by regions.
 
